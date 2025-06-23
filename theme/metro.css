@@ -1,0 +1,123 @@
+/* @theme metro */
+
+@import 'gaia';
+
+:root {
+  --color-background: #fff;
+  --color-foreground: #333;
+  --color-highlight: #800000;
+}
+
+section {
+  background-image: none;
+  padding-top: 90px;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: "Noto Sans JP";
+}
+
+/* https://github.com/marp-team/marpit/issues/271 */
+section::after {
+  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+  color: #888888;
+  right: 16px;
+  bottom: 8px;
+  font-size: 20px;
+}
+
+ul ul {
+  font-size: 24px;
+}
+
+section.title-slide {
+    padding-top: 180px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin: 4px auto;
+}
+
+section.title-slide h1 {
+  color: #000000;
+  text-align: left;
+}
+section.title-slide h1 strong {
+  -webkit-text-stroke: 1px #000000;
+}
+section.title-slide h1:not(:has(+ h2))::after {
+    content: "";
+    display: block;
+    width: 100%;
+    margin: 4px auto;
+    height: 1px;
+    background: #395ca8;
+  }
+section.title-slide h2 {
+  color: #000000;
+  text-align: left;
+}
+section.title-slide h2 strong {
+  -webkit-text-stroke: 1px #000000;
+}
+section.title-slide h3 {
+  color: #000000;
+  text-align: left;
+}
+section.title-slide h3 strong {
+  -webkit-text-stroke: 1px #000000;
+}
+section.title-slide h4 {
+  color: #000000;
+  text-align: left;
+}
+section.title-slide h4 strong {
+  -webkit-text-stroke: 1px #000000;
+}
+section.title-slide h5 {
+  color: #000000;
+  text-align: left;
+}
+section.title-slide h5 strong {
+  -webkit-text-stroke: 1px #000000;
+}
+section.title-slide p {
+  text-align: left;
+}
+
+p.date {
+    text-align: right;
+}
+
+header {
+  background-color: #395ca8;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+blockquote {
+  max-width: 90%;
+  border-top: 0.1em dashed #555;
+  font-size: 14px;
+  color: #888888;
+  position: absolute;
+  bottom: 46px;
+}
+blockquote::before {
+  content: "";
+  color: #888888;
+}
+blockquote::after {
+  content: "";
+  color: #888888;
+}
+
+img[alt~="center"] {
+  display: block;
+  margin: 0 auto;
+}
+
+/*
+code {
+  font-family: 'Hack Nerd Font', monospace;
+}
+*/
