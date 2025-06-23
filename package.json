@@ -1,0 +1,19 @@
+{
+  "name": "marp-templates",
+  "version": "1.0.0",
+  "description": "```bash # Install marp-cli # Requirement: node sh run.sh install",
+  "repository": {
+    "type": "git",
+    "url": "git@github-ftherb:FtherB/marp-templates.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.0"
+  }
+}

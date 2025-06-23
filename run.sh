@@ -11,7 +11,7 @@ case $1 in
         exit 0
         ;;
     install)
-        npm install @marp-team/marp-cli
+        npm install --save-dev @marp-team/marp-cli
         exit 0
         ;;
     *)
