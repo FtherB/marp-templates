@@ -8,7 +8,7 @@ paginate: true
 class: title-slide
 -->
 # Title
-#### Subtitle
+## Subtitle
 
 <br>
 
@@ -17,7 +17,12 @@ organization
 
 <p class="date">YYYY/MM/DD</p>
 
+---
+<!--
+class: section-slide
+-->
 
+# Section
 ---
 <!--
 class: 
@@ -34,4 +39,3 @@ header: hogehoge
 > 1: footnotenotenote
 > 2: notenote
 
----

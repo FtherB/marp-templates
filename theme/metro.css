@@ -14,6 +14,9 @@ section {
   padding-left: 40px;
   padding-right: 40px;
   font-family: "Noto Sans JP";
+  ul {
+      font-size: 28px;
+  }
 }
 
 /* https://github.com/marp-team/marpit/issues/271 */
@@ -22,69 +25,146 @@ section::after {
   color: #888888;
   right: 16px;
   bottom: 8px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
+/*
 ul ul {
-  font-size: 24px;
+    font-size: 24px;
+}
+*/
+
+table {
+    margin: auto;
+    font-size: 28px;
+}
+
+p.center {
+    text-align: center;
 }
 
 section.title-slide {
     padding-top: 180px;
-    padding-left: 100px;
-    padding-right: 100px;
-    margin: 4px auto;
-}
+    padding-left: 150px;
+    padding-right: 150px;
 
-section.title-slide h1 {
-  color: #000000;
-  text-align: left;
-}
-section.title-slide h1 strong {
-  -webkit-text-stroke: 1px #000000;
-}
-section.title-slide h1:not(:has(+ h2))::after {
-    content: "";
-    display: block;
-    width: 100%;
-    margin: 4px auto;
-    height: 1px;
-    background: #395ca8;
-  }
-section.title-slide h2 {
-  color: #000000;
-  text-align: left;
-}
-section.title-slide h2 strong {
-  -webkit-text-stroke: 1px #000000;
-}
-section.title-slide h3 {
-  color: #000000;
-  text-align: left;
-}
-section.title-slide h3 strong {
-  -webkit-text-stroke: 1px #000000;
-}
-section.title-slide h4 {
-  color: #000000;
-  text-align: left;
-}
-section.title-slide h4 strong {
-  -webkit-text-stroke: 1px #000000;
-}
-section.title-slide h5 {
-  color: #000000;
-  text-align: left;
-}
-section.title-slide h5 strong {
-  -webkit-text-stroke: 1px #000000;
-}
-section.title-slide p {
-  text-align: left;
+    h1 {
+      color: #000000;
+      text-align: left;
+      font-size: 52px;
+      font-weight: 500;
+    }
+    h1 strong {
+      -webkit-text-stroke: 1px #000000;
+    }
+    h1:has(+ h2)::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin: 4px auto;
+        height: 1px;
+        background: #395ca8;
+      }
+    h1:not(:has(+ h2))::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin: 4px auto;
+        height: 1px;
+        background: #395ca8;
+        margin-bottom: 81px;
+    }
+    h2 {
+      color: #000000;
+      text-align: left;
+      font-weight: 400;
+      font-size: 36px;
+    }
+    h2 strong {
+      -webkit-text-stroke: 1px #000000;
+    }
+    h3 {
+      color: #000000;
+      text-align: left;
+    }
+    h3 strong {
+      -webkit-text-stroke: 1px #000000;
+    }
+    h4 {
+      color: #000000;
+      text-align: left;
+    }
+    h4 strong {
+      -webkit-text-stroke: 1px #000000;
+    }
+    h5 {
+      color: #000000;
+      text-align: left;
+    }
+    h5 strong {
+      -webkit-text-stroke: 1px #000000;
+    }
+    p {
+      text-align: left;
+      font-size: 28px;
+      padding-top: 20px;
+    }
+
+    footer {
+        color: #fff;
+    }
 }
 
 p.date {
     text-align: right;
+    padding-top: 0;
+}
+
+section.section-slide {
+    padding-top: 270px;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    h1 {
+      color: #000000;
+      text-align: left;
+      font-size: 60px;
+      font-weight: 500;
+    }
+    h1 strong {
+      -webkit-text-stroke: 1px #000000;
+    }
+    h1::after {
+        content: "";
+        display: block;
+        width: 100%;
+        margin: 4px auto;
+        height: 1px;
+        background: #395ca8;
+    }
+    h2 {
+      color: #888888;
+      text-align: left;
+      font-size: 32px;
+      font-weight: 400;
+      padding-left: 10px;
+    }
+    h2 strong {
+      -webkit-text-stroke: 1px #000000;
+    }
+
+    header {
+        background-color: #ffffff;
+        color: #fff;
+    }
+
+    footer {
+        color: #fff;
+    }
+}
+
+h1 {
+    font-size: 32px;
 }
 
 header {
@@ -114,6 +194,11 @@ blockquote::after {
 img[alt~="center"] {
   display: block;
   margin: 0 auto;
+}
+
+footer {
+    font-size: 16px;
+    color: #888888;
 }
 
 /*
