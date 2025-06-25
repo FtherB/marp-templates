@@ -1,5 +1,10 @@
 # Marp themes
 
+## Requirements
+- node
+- Noto Sans JP
+- Hack Nerd Font
+
 ## Quick Start
 ```bash
 # Install marp-cli
