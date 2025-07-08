@@ -5,7 +5,7 @@
 - Noto Sans JP
 - Hack Nerd Font
 
-## Quick Start
+## Quickstart
 ```bash
 # Install marp-cli
 # Requirement: node

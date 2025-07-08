@@ -1,4 +1,4 @@
-/* @theme metro */
+/* @theme metro_deep */
 
 @import 'gaia';
 
@@ -13,6 +13,7 @@ section {
   padding-top: 90px;
   padding-left: 40px;
   padding-right: 40px;
+/*  font-family: "Tsukushi A Round Gothic"; */
   font-family: "Noto Sans JP";
   ul {
       font-size: 28px;
@@ -36,7 +37,7 @@ ul ul {
 
 table {
     margin: auto;
-    font-size: 28px;
+    font-size: 26px;
 }
 
 p.center {
@@ -78,7 +79,7 @@ section.title-slide {
       color: #000000;
       text-align: left;
       font-weight: 400;
-      font-size: 36px;
+      font-size: 44px;
     }
     h2 strong {
       -webkit-text-stroke: 1px #000000;
@@ -160,12 +161,9 @@ section.section-slide {
 
 }
 
-h1 {
-    font-size: 32px;
-}
 
 header {
-  background-color: #395ca8;
+  background-color: #0D2A52;
   color: #fff;
   font-size: 1em;
   font-weight: 700;
