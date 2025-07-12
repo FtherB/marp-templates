@@ -13,17 +13,13 @@ section {
   padding-top: 90px;
   padding-left: 40px;
   padding-right: 40px;
-/*  font-family: "Tsukushi A Round Gothic"; */
   font-family: "Noto Sans JP";
   ul {
       font-size: 28px;
   }
-  p, ul {
-      margin-top: 0;
-      padding-top: 0;
-  }
 }
 
+/* https://github.com/marp-team/marpit/issues/271 */
 section::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
   color: #888888;
@@ -40,7 +36,7 @@ ul ul {
 
 table {
     margin: auto;
-    font-size: 26px;
+    font-size: 28px;
 }
 
 p.center {
@@ -82,7 +78,7 @@ section.title-slide {
       color: #000000;
       text-align: left;
       font-weight: 400;
-      font-size: 44px;
+      font-size: 36px;
     }
     h2 strong {
       -webkit-text-stroke: 1px #000000;
@@ -164,39 +160,8 @@ section.section-slide {
 
 }
 
-section:has(img) {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 90px 40px;
-    font-family: "Noto Sans JP";
-    .image-row {
-        flex: 1;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 1rem;
-        margin: 1.5rem auto;
-        width: 100%;
-        margin-top: 0.1em;
-        img {
-            flex: 0 1 30%;
-            max-width: 100%;
-            max-height: 20vh;
-            width: auto;
-            height: auto;
-            object-fit: contain;
-            display: block;
-            margin: 0 auto;
-            box-sizing: border-box;
-        }
-    }
-    p, ul {
-        margin-bottom: 0;
-        padding-bottom: 0;
-    }
+h1 {
+    font-size: 32px;
 }
 
 header {
@@ -204,10 +169,6 @@ header {
   color: #fff;
   font-size: 1em;
   font-weight: 700;
-}
-
-h1 {
-    font-size: 44px;
 }
 
 blockquote {
@@ -239,27 +200,7 @@ footer {
 .columns {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    height: 100%;
     gap: 1rem;
-    align-items: start;
-}
-
-.columns > *:has(img) {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  min-height: 100%;
-}
-
-.columns img {
-    width: auto;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    max-width: 100%;
-    max-height: 20vh;
-    box-sizing: border-box;
 }
 
 .columnsline {
@@ -267,7 +208,6 @@ footer {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
   position: relative;
-  height: 90%;
 }
 
 .columns > :nth-child(2) {
@@ -289,6 +229,7 @@ footer {
 .columnsline > :nth-child(2) {
     padding-left: 0.5rem;
 }
+
 /*
 code {
   font-family: 'Hack Nerd Font', monospace;

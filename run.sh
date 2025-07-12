@@ -7,7 +7,7 @@ fi
 
 case $1 in
     start)
-        npx @marp-team/marp-cli@latest -s ./slide --theme-set ./theme
+        npx @marp-team/marp-cli@latest --allow-local-files -s ./slide --theme-set ./theme
         exit 0
         ;;
     install)
