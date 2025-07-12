@@ -15,4 +15,3 @@ sh run.sh install
 sh run.sh start
 ```
 
-## Simple
