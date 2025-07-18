@@ -145,6 +145,18 @@ header: Two columns with image
 ---
 <!--
 class:
+header: Table
+-->
+
+|item|description|
+|:-------|:---------------------|
+|sandwich|controlled            |
+|flower  |Maybe you gave, right?|
+|steel|You got it!|
+
+---
+<!--
+class:
 header: mermaid
 -->
 - Here

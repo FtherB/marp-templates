@@ -1,6 +1,6 @@
 ---
 marp: true
-theme: metro
+theme: metro_light
 footer: "Title"
 paginate: true
 ---
