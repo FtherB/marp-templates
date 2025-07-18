@@ -1,0 +1,7 @@
+/* @theme metro_frost */
+
+@import 'metro_common';
+
+header {
+  background: linear-gradient(to right, #000428, #004e92);
+}
