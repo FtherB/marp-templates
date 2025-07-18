@@ -24,11 +24,19 @@ section {
   }
 }
 
-section::after {
+section:not(.title-slide):not(.section-slide)::after {
   content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-  color: #888888;
-  right: 16px;
-  bottom: 8px;
+  color: #fff;
+  right: 8px;
+  bottom: -18.5px;
+  font-size: 16px;
+}
+
+section.title-slide::after, section.section-slide::after {
+  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
+  color: #888;
+  right: 8px;
+  bottom: -18.5px;
   font-size: 16px;
 }
 
@@ -139,6 +147,7 @@ section.title-slide {
 
     footer {
         color: #fff;
+        background: #fff;
     }
 }
 
@@ -183,6 +192,11 @@ section.section-slide {
     header {
         background-color: #ffffff;
         color: #fff;
+    }
+
+    footer {
+        background: #fff;
+        color: #888;
     }
 
 }
@@ -256,7 +270,9 @@ img[alt~="center"] {
 
 footer {
     font-size: 16px;
-    color: #888888;
+    color: #fff;
+    height: 32px;
+    line-height: 13px;
 }
 
 .columns {
