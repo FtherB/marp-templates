@@ -1,5 +1,5 @@
 allowLocalFiles: true
 html: true
-themeSet: ./theme
+themeSet: ./themes
 size: 16:9
 engine: engine.mjs
