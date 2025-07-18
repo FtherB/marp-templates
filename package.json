@@ -5,9 +5,14 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "marp -s ./slide"
   },
   "devDependencies": {
-    "@marp-team/marp-cli": "^4.2.0"
+    "@marp-team/marp-cli": "latest",
+    "mermaid": "latest",
+    "markdown-it-mark": "latest",
+    "markdown-it-attrs": "latest",
+    "markdown-it-container": "latest"
   }
 }

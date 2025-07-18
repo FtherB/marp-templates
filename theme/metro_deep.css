@@ -244,7 +244,7 @@ footer {
     align-items: start;
 }
 
-.columns > *:has(img) {
+.columns > *:has(img):not(:has(p, u)) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,6 +289,27 @@ footer {
 .columnsline > :nth-child(2) {
     padding-left: 0.5rem;
 }
+
+.mermaid {
+    background: #ffffff;
+    text-align: center;
+}
+
+.bc {
+    text-align: center;
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.blue {
+    color: #395ca8;
+}
+
+.blueb {
+    color: #395ca8;
+    font-weight: bold;
+}
+
 /*
 code {
   font-family: 'Hack Nerd Font', monospace;
