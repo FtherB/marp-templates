@@ -2,5 +2,5 @@
 
 node_modules/*
 package-lock.json
-slide/main.md
-slide/lib/*
+slides/main.md
+slides/lib/*
