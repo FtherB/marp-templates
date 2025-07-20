@@ -33,11 +33,7 @@ section:not(.title-slide):not(.section-slide)::after {
 }
 
 section.title-slide::after, section.section-slide::after {
-  content: attr(data-marpit-pagination) '/' attr(data-marpit-pagination-total);
-  color: #888;
-  right: 8px;
-  bottom: -18.5px;
-  font-size: 16px;
+    display: none;
 }
 
 /*
@@ -146,8 +142,7 @@ section.title-slide {
     }
 
     footer {
-        color: #fff;
-        background: #fff;
+        display: none;
     }
 }
 
@@ -195,8 +190,7 @@ section.section-slide {
     }
 
     footer {
-        background: #fff;
-        color: #888;
+        display: none;
     }
 
 }
