@@ -2,9 +2,9 @@
 
 link() {
     MERMAID_SRC="node_modules/mermaid/dist/mermaid.min.js"
-    MERMAID_LINK="slide/lib/mermaid.min.js"
+    MERMAID_LINK="slides/lib/mermaid.min.js"
 
-    mkdir -p slide/lib
+    mkdir -p slides/lib
 
     if [ ! -L "$MERMAID_LINK" ] || [ ! -e "$MERMAID_LINK" ]; then
       ln -sf "../../$MERMAID_SRC" "$MERMAID_LINK"
