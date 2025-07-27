@@ -140,7 +140,9 @@ section.title-slide {
       font-size: 28px;
       padding-top: 20px;
     }
-
+    header {
+        display: none;
+    }
     footer {
         display: none;
     }
@@ -185,8 +187,7 @@ section.section-slide {
     }
 
     header {
-        background-color: #ffffff;
-        color: #fff;
+        display: none;
     }
 
     footer {
