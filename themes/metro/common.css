@@ -103,13 +103,14 @@ section.title-slide {
         margin: 4px auto;
         height: 1px;
         background: #395ca8;
-        margin-bottom: 81px;
+        margin-bottom: 132px;
     }
     h2 {
       color: #000000;
       text-align: left;
       font-weight: 400;
       font-size: 44px;
+      margin-bottom: 50px;
     }
     h2 strong {
       -webkit-text-stroke: 1px #000000;
