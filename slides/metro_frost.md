@@ -69,3 +69,26 @@ header: Two columns
 
 > 1: This is all footnote. There are reference, or something........ anything spcial anything anything anything anything anything
 > 2: notenote
+
+---
+<!--
+class: 
+header: Boxes
+-->
+
+box with border
+<div class="boxborder">
+
+# Purpose
+rage
+sandwich
+
+</div>
+grayboxes
+<div class="boxgray">
+
+# Purpose
+rage
+sandwich
+
+</div>
