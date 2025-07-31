@@ -22,7 +22,7 @@ fi
 
 case $1 in
     start)
-        npm run start
+        PORT=8080 npm run start
         exit 0
         ;;
     install)
